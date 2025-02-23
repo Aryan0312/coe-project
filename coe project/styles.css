@@ -1,0 +1,181 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #F4EDD3;
+    background-color: #A5BFCC;
+}
+
+/* Header and navigation */
+header {
+    background-color: #4C585B;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #C9F2C7;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #4C585B;
+}
+
+/* Main content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 1rem;
+}
+
+/* Hero section */
+#hero {
+    text-align: center;
+    background-color: #4C585B;
+    padding: 3rem 0;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Trainer profile */
+#trainer-profile {
+    text-align: center;
+    color: #4C585B;
+}
+
+#trainer-profile img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+#trainer-profile ul {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+/* Workout plans */
+#workout-plans {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.plan {
+    flex-basis: calc(33.33% - 1rem);
+    background-color: #4C585B;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+/* Testimonials */
+#testimonials {
+    text-align: center;
+    color: #4C585B;
+}
+
+.testimonial {
+    margin-bottom: 2rem;
+}
+
+.testimonial img {
+    /* width: 200px; */
+    height: 190px;
+    object-fit: cover;
+    /* border-radius: 50%; */
+    margin: 0 0.5rem 1rem 0.5rem;
+}
+
+/* Contact form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #4C585B;
+    color: #F4EDD3;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#social-links {
+    margin-bottom: 1rem;
+    color:#F4EDD3 ;
+}
+
+.social-icon {
+    color:#F4EDD3 ;
+    
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #workout-plans {
+        flex-direction: column;
+    }
+
+    .plan {
+        flex-basis: 100%;
+    }
+}
+#whead h2{
+    text-align: center;
+    color: #323738;
+}
